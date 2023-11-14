@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,7 @@ public class ReplyController {
     public String registReply(Reply reply, HttpSession session, Model model) {
         System.out.println(reply.toString());
         model.addAttribute("reply", reply);
+
         String movieId = reply.getMovieId();
         service.registReply(reply);
         return "redirect:/movie/detail/" + movieId;

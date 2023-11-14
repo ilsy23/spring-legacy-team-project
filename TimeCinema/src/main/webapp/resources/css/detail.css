@@ -3,6 +3,7 @@ body {
 	color: white;
 }
 
+
 .detail {
             display: block;
             align-items: center;
@@ -82,6 +83,10 @@ main {
 	border-radius: 5px;
 }
 
+.detail_tit {
+	margin-top: 15px;
+}
+
 .detail_cont {
 	display: flex;
 	padding: 20px 0 48px;
@@ -113,6 +118,16 @@ main {
 	word-wrap: break-word;
 }
 
+.sp {
+	padding-right: 20px;
+	max-width: 100px;
+	padding-right: 20px;
+	font-weight: normal;
+	color: #98989C;
+	white-space: nowrap;
+	
+}
+
 /* 틀 */
 .detail {
 	display: block;
@@ -121,20 +136,22 @@ main {
 	margin-top: 100px;
 }
 
-.content {
+.plot {
 	text-align: left;
 	margin: 100px 600px 130px 0;
 }
 
 .stillcut {
-	margin-left: 250px;
-	margin-right: 250px;
+
+	margin: 0 250px 100px 250px;
+}
+
+#reply {
+	margin: 100px 250px 100px 250px;
 }
 
 .container {
-	margin-left: 250px;
-	margin-right: 250px;
-	margin-top: 100px;
+	margin: 100px 250px 0 250px;
 }
 
 .categorize {
@@ -202,6 +219,74 @@ li {
 }
 
 /* review */
-.reviewlist {
-	margin-bottom: 20px;
+#reply p {
+	color: red;
+	font-weight: lighter;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-size: 10px;
+}
+
+#reply p a{
+	margin-left: 7px;
+	font-size: 12px;
+	margin-bottom: 5px;
+	
+}
+
+#reply_btn{
+	width: 65px;
+	height: 65px;
+	margin: 85px 0 15px 30px;
+	background-color: pink;
+	border-radius: 5px;
+	font-weight: bolder;
+	color: #fff;
+}
+
+
+
+.replydiv {
+	background-color: grey;
+	border-radius: 15px;
+	padding: 10px 0 10px 15px;
+	disply: flex;
+	}
+.comment button{
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: black;
+	
+
+}
+
+.replydiv .rname {
+	font-weight: bolder;
+}
+
+.replydiv .rdate {
+    display: inline;
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+#content {
+	width: 900px;
+	height: 150px;
+	padding: 30px 15px 0 15px;
+	margin: 5px 0 5px 10px; 
+	resize: none;
+	border-radius: 5px;
+}
+
+.comment {
+	margin-top: 5px;
+	width: 900px;
+}
+
+.replyForm form{
+	display: flex;
+	margin-bottom: 25px;
 }

@@ -10,6 +10,7 @@ public interface IReplyService {
     void registReply(Reply reply);
     
     //목록 요청
+
     List<Reply> getList(String movieId);
     
     //댓글 삭제
